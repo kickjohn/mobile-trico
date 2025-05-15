@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trico - Asisten AI Berbahasa Indonesia</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TRICO</h1>
+        </div>
+        
+        <div class="main-content">
+            <div class="animation-container">
+                <div id="neutral" class="lottie-animation active"></div>
+                <div id="sad" class="lottie-animation"></div>
+                <div id="listening" class="lottie-animation"></div>
+                <div id="blink" class="lottie-animation"></div>
+                <div id="happy" class="lottie-animation"></div>
+                <div id="tired" class="lottie-animation"></div>
+            </div>
+            
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message ai-message">
+                        Halo! Saya Trico, asisten AI berbahasa Indonesia. Mau ngobrol tentang apa hari ini?
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <div class="status-indicator">
+                        <div class="status-dot" id="status-dot"></div>
+                        <div class="status-text" id="status-text">Siap mendengarkan</div>
+                    </div>
+                    
+                    <div class="waveform-container">
+                        <canvas id="waveform"></canvas>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button id="start-btn">Mulai Bicara (Space)</button>
+                        <button id="text-mode-btn">Mode Teks (F2)</button>
+                        <button id="settings-btn">Pengaturan</button>
+                    </div>
+                    
+                    <div class="input-container" id="input-container">
+                        <input type="text" id="text-input" placeholder="Ketik pesan Anda di sini...">
+                        <button class="send-btn" id="send-btn">Kirim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ai.js"></script>
+</body>
+</html>
