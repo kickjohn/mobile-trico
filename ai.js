@@ -40,7 +40,7 @@ function showApiKeyDialog() {
                 Untuk menggunakan Trico, Anda memerlukan API key dari Sadid.
                 <br>Minta API key di <a href="https://rafifsadid.my.id" target="_blank" style="color: #00cc7a;">rafifsadid.my</a>
             </p>
-            <input id="api-key-input" class="swal2-input" placeholder="Masukkan API Key OpenRouter">
+            <input id="api-key-input" class="swal2-input" placeholder="Masukkan API Key">
         `,
         showCancelButton: true,
         confirmButtonText: 'Simpan',
@@ -903,7 +903,7 @@ function updateApiKeyDialog() {
                 Untuk menggunakan Trico, Anda memerlukan API key dari Sadid.
                 <br>Minta API key di <a href="https://rafifsadid.my.id" target="_blank" style="color: #00cc7a;">rafifsadid.my</a>
             </p>
-            <input id="api-key-input" class="swal2-input" placeholder="Masukkan API Key OpenRouter">
+            <input id="api-key-input" class="swal2-input" placeholder="Masukkan API Key">
             `,
             showCancelButton: true,
             showDenyButton: true,
