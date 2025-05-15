@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function showApiKeyDialog() {
     Swal.fire({
-        title: 'Pengaturan API OpenRouter',
+        title: 'Pengaturan API Trico',
         html: `
             <p style="color: #333; text-align: left; margin-bottom: 15px;">
                 Untuk menggunakan Trico, Anda memerlukan API key dari Sadid.
