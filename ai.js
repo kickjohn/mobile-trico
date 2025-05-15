@@ -113,7 +113,7 @@ function initLottieAnimations() {
         
         animationInstances[emotion] = lottie.loadAnimation({
             container: container,
-            renderer: 'svg',
+            renderer: 'json',
             loop: true,
             autoplay: emotion === 'neutral', // Hanya neutral yang aktif di awal
             path: lottieFiles[emotion]
