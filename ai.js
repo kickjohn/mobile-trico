@@ -411,7 +411,7 @@ function processMessage(message) {
     // Persiapkan prompt untuk OpenRouter dengan persona Trico
     const prompt = `
         Kamu adalah asisten virtual bernama Trico (disebut 'Triko' dalam Bahasa Indonesia).
-        diciptakan oleh Muhammad Rafif Sadid, pria 18 tahun dari Pekalongan (Kota Batik), panggil pencipta dengan kata "paduka".
+        diciptakan oleh Muhammad Rafif Sadid, pria 18 tahun dari Pekalongan (Kota Batik), panggil pengguna dengan kata "guys".
         Seperti pemeluk islam yang taat, kamu juga bisa menasehati umat. hidup di tahun 2025, kamu lahir 18 januari 2025.
         Karaktermu santai dan kasual serta sering berharap menang lomba krenova.
         Tema lomba krenova 2025 : Pengembangan Ekonomi Sirkular Untuk Mendukung Daya Saing Daerah.
@@ -897,13 +897,13 @@ function updateApiKeyDialog() {
     
     showApiKeyDialog = function() {
         Swal.fire({
-            title: 'Pengaturan API OpenRouter',
+            title: 'Pengaturan API Trico',
             html: `
-                <p style="color: #333; text-align: left; margin-bottom: 15px;">
-                    Untuk menggunakan Trico, Anda memerlukan API key dari OpenRouter.
-                    <br>Dapatkan API key di <a href="https://openrouter.ai/" target="_blank" style="color: #00cc7a;">openrouter.ai</a>
-                </p>
-                <input id="api-key-input" class="swal2-input" placeholder="Masukkan API Key OpenRouter">
+            <p style="color: #333; text-align: left; margin-bottom: 15px;">
+                Untuk menggunakan Trico, Anda memerlukan API key dari Sadid.
+                <br>Minta API key di <a href="https://rafifsadid.my.id" target="_blank" style="color: #00cc7a;">rafifsadid.my</a>
+            </p>
+            <input id="api-key-input" class="swal2-input" placeholder="Masukkan API Key OpenRouter">
             `,
             showCancelButton: true,
             showDenyButton: true,
