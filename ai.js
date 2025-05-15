@@ -392,7 +392,7 @@ function detectEmotion(text) {
     text = text.toLowerCase();
     
     // Deteksi emosi berdasarkan kata-kata kunci sederhana
-    if (/(haha|lucu|kocak|😄|😂|😆|senang|bahagia|bagus|hebat|mantap|baik-baik|Alhamdulillah)/i.test(text)) {
+    if (/(halo|haha|lucu|kocak|😄|😂|😆|senang|bahagia|bagus|hebat|mantap|baik-baik|Alhamdulillah)/i.test(text)) {
         return 'happy';
     } else if (/(sedih|kecewa|maaf|😢|😭|😔|sayang sekali|menyesal|aduh|marah)/i.test(text)) {
         return 'sad';
@@ -865,7 +865,7 @@ function enableDemoMode() {
     Swal.fire({
         icon: 'info',
         title: 'Mode Demo Aktif',
-        text: 'Aplikasi berjalan dalam mode demo dengan respons terbatas. Untuk pengalaman lengkap, tambahkan API key OpenRouter.',
+        text: 'Aplikasi berjalan dalam mode demo dengan respons terbatas. Untuk pengalaman lengkap, tambahkan API key Trico.',
         showConfirmButton: false,
         timer: 3000,
         timerProgressBar: true
@@ -883,12 +883,16 @@ function getDemoResponse(message) {
         return 'Pekalongan terkenal dengan batiknya yang khas. Motif Jlamprang itu favorit saya. Sayang harganya naik terus, inflasi katanya.';
     } else if (message.includes('politik')) {
         return 'Politik itu seperti batik, rumit tapi indah kalau dilihat dari jauh. Tapi kalau dilihat dekat-dekat, banyak cacatnya.';
+    } else if (message.includes('esemka')) {
+        return 'hahaha, proyek mulyono tuh. no komen ah';
+    } else if (message.includes('sadid') || message.includes('rafif')) {
+        return 'kamu kenal dengannya? dia yang buat aku. aku teman setianya!';
     } else if (message.includes('makanan') || message.includes('kuliner')) {
         return 'Di Pekalongan wajib coba Nasi Megono, Tauto, dan Pindang Tetel. Jangan lupa cicipi Garang Asem juga!';
     } else if (message.includes('demo') || message.includes('api')) {
         return 'Ini mode demo. Untuk fungsi lengkap, tambahkan API key di pengaturan. Respons saya terbatas tanpa koneksi ke AI sebenarnya.';
     } else {
-        return 'Maaf, dalam mode demo respons saya terbatas. Tambahkan API key untuk pengalaman lengkap dengan OpenRouter API.';
+        return 'Maaf, dalam mode demo respons saya terbatas. Tambahkan API key untuk pengalaman lengkap dengan Trico API.';
     }
 }
 
