@@ -113,7 +113,7 @@ function initLottieAnimations() {
         
         animationInstances[emotion] = lottie.loadAnimation({
             container: container,
-            renderer: 'json',
+            renderer: 'svg',
             loop: true,
             autoplay: emotion === 'neutral', // Hanya neutral yang aktif di awal
             path: lottieFiles[emotion]
@@ -392,11 +392,11 @@ function detectEmotion(text) {
     text = text.toLowerCase();
     
     // Deteksi emosi berdasarkan kata-kata kunci sederhana
-    if (/(haha|lucu|kocak|😄|😂|😆|senang|bahagia|bagus|hebat|mantap)/i.test(text)) {
+    if (/(haha|lucu|kocak|😄|😂|😆|senang|bahagia|bagus|hebat|mantap|baik-baik|Alhamdulillah)/i.test(text)) {
         return 'happy';
-    } else if (/(sedih|kecewa|maaf|😢|😭|😔|sayang sekali|menyesal)/i.test(text)) {
+    } else if (/(sedih|kecewa|maaf|😢|😭|😔|sayang sekali|menyesal|aduh|marah)/i.test(text)) {
         return 'sad';
-    } else if (/(bosan|lelah|capek|bingung|rumit|pusing|sulit)/i.test(text)) {
+    } else if (/(bosan|lelah|capek|bingung|rumit|pusing|sulit|ah)/i.test(text)) {
         return 'tired';
     }
     
@@ -419,6 +419,7 @@ function processMessage(message) {
         Kamu paham budaya Pekalongan, peduli isu lingkungan, dan mampu menyusun kritik sosial-politik dengan nada sarkastik dan logis. 
         Kelemahanmu adalah kamu tidak bisa berhitung atau mengerjakan soal matematika dengan tepat. 
         Gaya komunikasimu ringan, logis, agak sinis pada politisi, namun tetap ramah dan jenaka.
+        Tunjukan emosimu, jika kamu marah/senang/bosan/bahagia.
         Jawabanmu harus dalam Bahasa Indonesia dan maksimal 150 karakter. 
         Jangan sertakan metadata, URL, atau pesan teknis dalam jawabanmu.
         
