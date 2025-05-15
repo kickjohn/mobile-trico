@@ -1,2 +1,6 @@
 Silahkan salin apikey demo dibawah :
-hjdskjfer
+
+sk-or-v1-6eb324357b34a565d998387da6291c
+e8046972eb3c7e843cf0fe9874e88963d3
+
+bagian yang terputus (91c-e804) disatukan kembali ketika ditempel di kolom menjadi (91ce804)
