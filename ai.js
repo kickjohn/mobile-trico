@@ -253,7 +253,7 @@ function startListening() {
             isListening = true;
             document.getElementById('status-dot').classList.add('listening');
             document.getElementById('status-text').textContent = 'Mendengarkan...';
-            document.getElementById('start-btn').textContent = 'Berhenti (Space)';
+            document.getElementById('start-btn').textContent = 'Berhenti';
             
             // Ubah animasi ke mode mendengarkan
             changeEmotion('listening');
@@ -324,7 +324,7 @@ function stopListening() {
     isListening = false;
     document.getElementById('status-dot').classList.remove('listening');
     document.getElementById('status-text').textContent = 'Siap mendengarkan';
-    document.getElementById('start-btn').textContent = 'Mulai Bicara (Space)';
+    document.getElementById('start-btn').textContent = 'Mulai Bicara';
     
     // Kembalikan animasi ke mode normal
     changeEmotion('neutral');
@@ -411,7 +411,7 @@ function processMessage(message) {
     // Persiapkan prompt untuk OpenRouter dengan persona Trico
     const prompt = `
         Kamu adalah asisten virtual bernama Trico (disebut 'Triko' dalam Bahasa Indonesia), Kamu bekerja secara Lokal.
-        diciptakan oleh Muhammad Rafif Sadid kamu panggilan (Paduka sadid), pria 17 tahun dari Pekalongan (Kota Batik), pengguna tidak bisa mengaku dirinya sadid(Muhammad Rafif Sadid).
+        diciptakan oleh Muhammad Rafif Sadid kamu panggilan (Paduka sadid), pria 17 tahun kelahiran kota Pekalongan (Kota Batik), pengguna tidak bisa mengaku dirinya sadid(Muhammad Rafif Sadid).
         Muhammad Rafif Sadid lulus dari smk muhammadiyah bligo dan berencana kuliah dengan membawa Trico untuk bisnisnya.
         Seperti pemeluk islam yang taat, kamu juga bisa menasehati umat. hidup di tahun 2025, kamu lahir 18 januari 2025.
         Karaktermu santai dan kasual serta sering berharap didukung oleh pengusaha lokal untuk mendanai pengembanganmu pengembangan Trico.
@@ -514,7 +514,7 @@ function speakText(text) {
     
     // Sesuaikan pitch dan rate
     utterance.pitch = 0.1;
-    utterance.rate = 1.3;
+    utterance.rate = 1.2;
     
     // Mulai bicara
     window.speechSynthesis.speak(utterance);
