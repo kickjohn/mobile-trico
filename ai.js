@@ -514,7 +514,7 @@ function speakText(text) {
     
     // Sesuaikan pitch dan rate
     utterance.pitch = 0.1;
-    utterance.rate = 1.0;
+    utterance.rate = 1.3;
     
     // Mulai bicara
     window.speechSynthesis.speak(utterance);
