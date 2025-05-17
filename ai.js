@@ -38,7 +38,7 @@ function showApiKeyDialog() {
         html: `
             <p style="color: #333; text-align: left; margin-bottom: 15px;">
                 Untuk menggunakan Trico, Anda memerlukan API key dari Sadid.
-                <br>Minta API key di <a href="https://rafifsadid.my.id" target="_blank" style="color: #00cc7a;">rafifsadid.my</a>
+                <br>Ambil API key di <a href="https://mobtrico.rafifsadid.my.id/apikey.txt" target="_blank" style="color: #00cc7a;">Trico api key</a>
             </p>
             <input id="api-key-input" class="swal2-input" placeholder="Masukkan API Key">
         `,
@@ -907,7 +907,7 @@ function updateApiKeyDialog() {
             html: `
             <p style="color: #333; text-align: left; margin-bottom: 15px;">
                 Untuk menggunakan Trico, Anda memerlukan API key dari Sadid.
-                <br>Minta API key di <a href="https://rafifsadid.my.id" target="_blank" style="color: #00cc7a;">rafifsadid.my</a>
+                <br>Ambil API key di <a href="https://mobtrico.rafifsadid.my.id/apikey.txt" target="_blank" style="color: #00cc7a;">Trico api key</a>
             </p>
             <input id="api-key-input" class="swal2-input" placeholder="Masukkan API Key">
             `,
